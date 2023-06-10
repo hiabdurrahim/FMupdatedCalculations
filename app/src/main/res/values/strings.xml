@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Smart Calculations</string>
+    <string-array name="Flowrate">
+
+        <item>0.1</item>
+        <item>0.16</item>
+        <item>0.2</item>
+    </string-array>
+</resources>

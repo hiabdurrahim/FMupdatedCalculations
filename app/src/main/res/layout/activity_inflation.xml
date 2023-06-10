@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InflationActivity">
+
+    <TextView
+        android:id="@+id/textViewFSS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Inflation percentage"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <EditText
+        android:id="@+id/editTextoldprice"
+        android:layout_width="216dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_edittextabc"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Old Price"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFSS" />
+
+    <EditText
+        android:id="@+id/editTextoldprice3"
+        android:layout_width="216dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/rounded_edittextabc"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Old Price"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/resultbutton"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="@+id/resultbutton"
+        app:layout_constraintTop_toBottomOf="@+id/resultbutton" />
+
+    <EditText
+        android:id="@+id/editTextNewprice"
+        android:layout_width="216dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_edittextabc"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter New Price"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/editTextoldprice"
+        app:layout_constraintStart_toStartOf="@+id/editTextoldprice"
+        app:layout_constraintTop_toBottomOf="@+id/editTextoldprice" />
+
+    <TextView
+        android:id="@+id/textshowresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textColor="#30B2F1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNewprice"
+        app:layout_constraintStart_toStartOf="@+id/editTextNewprice"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewprice" />
+
+    <TextView
+        android:id="@+id/textshowresult2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:textColor="#30B2F1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editTextoldprice3"
+        app:layout_constraintStart_toStartOf="@+id/editTextoldprice3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextoldprice3" />
+
+    <Button
+        android:id="@+id/resultbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Inflation Percentage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textshowresult" />
+
+    <Button
+        android:id="@+id/resultbutton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Current Inflated Price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textshowresult2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

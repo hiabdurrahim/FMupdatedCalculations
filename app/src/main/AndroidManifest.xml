@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/smart"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/smart_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Calculations"
+        tools:targetApi="31">
+        <activity
+            android:name=".Calculator"
+            android:exported="false" />
+        <activity
+            android:name=".FireSuppressionsystem"
+            android:exported="false" />
+        <activity
+            android:name=".ThreePhasemotorAmp"
+            android:exported="false" />
+        <activity
+            android:name=".FoamforRecActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CablesizeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HPKWAmpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FSSQuoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FASQuoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeetpsibarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".m3hgpmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InflationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MechanicalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ElectricalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Co2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NovecActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainPage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
